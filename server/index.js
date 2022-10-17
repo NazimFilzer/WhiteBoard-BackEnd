@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000","collaber.netlify.app"],
+    origin: ["http://localhost:3000","https://collaber.netlify.app/"],
     methods: ["GET", "POST"],
   },
 });
