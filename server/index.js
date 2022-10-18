@@ -27,8 +27,8 @@ io.on("connection", (socket) => {
     socket.data.room = data.room;
     const messageData = {
       room: data.room,
-      author: 'Server',
-      message: `User ${data.username} has joined the room.`,
+      author: 'Bot',
+      message: `${data.username} has joined the room.`,
       time:
         new Date(Date.now()).getHours() +
         ":" +
